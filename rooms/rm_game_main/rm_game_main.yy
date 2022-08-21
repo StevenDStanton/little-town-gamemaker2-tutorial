@@ -60,6 +60,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_baker","path":"objects/obj_baker/obj_baker.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1024.0,"y":2080.0,"resourceVersion":"1.0","name":"inst_3BD7E197","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_grocer","path":"objects/obj_grocer/obj_grocer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2880.0,"y":1728.0,"resourceVersion":"1.0","name":"inst_79B2F114","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_teacher","path":"objects/obj_teacher/obj_teacher.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3296.0,"y":576.0,"resourceVersion":"1.0","name":"inst_25FC82AD","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":5.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-416.0,"y":-160.0,"resourceVersion":"1.0","name":"inst_8072970","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"depth":200,"tilesetId":{"name":"tiles_town","path":"tilesets/tiles_town/tiles_town.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":10,"SerialiseHeight":6,"TileSerialiseData":[
 1,14,14,14,14,14,3,8,8,8,
@@ -119,6 +120,7 @@
     {"name":"inst_3BD7E197","path":"rooms/rm_game_main/rm_game_main.yy",},
     {"name":"inst_79B2F114","path":"rooms/rm_game_main/rm_game_main.yy",},
     {"name":"inst_25FC82AD","path":"rooms/rm_game_main/rm_game_main.yy",},
+    {"name":"inst_8072970","path":"rooms/rm_game_main/rm_game_main.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
