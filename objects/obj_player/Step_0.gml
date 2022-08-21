@@ -13,15 +13,20 @@ if(vx != 0 || vy != 0){
 	y = collision_point(x, y+vy, obj_par_enviroment, true, true) ? y : y+vy;
 	nearbyNPC = collision_rectangle(x - lookRange, y-lookRange, x+lookRange, y+lookRange, obj_npc, false, true)
 	if(nearbyNPC){
-		show_debug_message("Found NPC")
+		if(!hasGreeted){
+			audio_play_sound(snd_greeting01, 1, false);
+			hasGreeted = true;
+		}
+		
 	}else{
-		show_debug_message("No NPC")
+		hasGreeted  = false;
 	}
 	
 	//Sets the direction based on the current velocity
 	dir = (vx > 0) ? 0 : ((vx < 0) ? 2 : dir);
 	dir = (vy > 0) ? 1 : ((vy < 0) ? 3 : dir);
 	sprite_index = walkDirectionIndex[dir];
+	audio_listener_set_position(0, x, y, 0);
 }else {
 	sprite_index = idleDirectionIndex[dir]
 }

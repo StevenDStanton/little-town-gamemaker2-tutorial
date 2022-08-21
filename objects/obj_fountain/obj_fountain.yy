@@ -27,7 +27,9 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"useSound","path":"objects/obj_par_enviroment/obj_par_enviroment.yy",},"objectId":{"name":"obj_par_enviroment","path":"objects/obj_par_enviroment/obj_par_enviroment.yy",},"value":"snd_fountain","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "items",
     "path": "folders/Objects/items.yy",
