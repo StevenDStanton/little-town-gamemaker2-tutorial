@@ -1,11 +1,19 @@
 /// @description Movement
-moveRight = keyboard_check(vk_right);
-moveLeft = keyboard_check(vk_left);
-moveUp = keyboard_check(vk_up);
-moveDown = keyboard_check(vk_down);
+moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
+moveLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
+moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
+moveDown = keyboard_check(vk_down) || keyboard_check(ord("S"));
+interact =   keyboard_check(ord("E"));
 
 vx = ((moveRight - moveLeft) * walkSpeed);
 vy = ((moveDown - moveUp ) * walkSpeed)
+
+destroyIfExists = function (obj)
+{
+	if(instance_exists(obj)){
+		instance_destroy(obj);
+	}	
+}
 
 if(vx != 0 || vy != 0){
 	//Detects if there is a collision with an enviroment object and prevents movement if there is
@@ -20,6 +28,9 @@ if(vx != 0 || vy != 0){
 		
 	}else{
 		hasGreeted  = false;
+		hasInteraction = true;
+		destroyIfExists(obj_textbox)
+		
 	}
 	
 	//Sets the direction based on the current velocity
@@ -29,6 +40,28 @@ if(vx != 0 || vy != 0){
 	audio_listener_set_position(0, x, y, 0);
 }else {
 	sprite_index = idleDirectionIndex[dir]
+}
+
+var _text;
+
+if(interact){
+	if(!hasInteraction){
+		hasInteraction = true;
+		if(!instance_exists(obj_textbox) && nearbyNPC){
+			_text = nearbyNPC.myText;
+			currentTextBox = instance_create_depth(x, y, -10000, obj_textbox)
+			currentTextBox.textToShow = _text;
+		}else{
+			
+			destroyIfExists(obj_textbox)
+			
+		}
+	}
+	
+}else{
+	hasInteraction = false;	
+	
+	
 }
 //auto depth sorting
 depth = -y;

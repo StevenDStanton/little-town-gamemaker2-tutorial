@@ -27,7 +27,9 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"myText","path":"objects/obj_npc/obj_npc.yy",},"objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"value":"I hope you are enjoying your summer vacation!","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "npcs",
     "path": "folders/Objects/npcs.yy",

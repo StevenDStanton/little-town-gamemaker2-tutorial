@@ -29,6 +29,7 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"loopRange01","path":"objects/obj_npc/obj_npc.yy",},"objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"value":"90","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"myText","path":"objects/obj_npc/obj_npc.yy",},"objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"value":"Would you like to buy some bread?","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "npcs",

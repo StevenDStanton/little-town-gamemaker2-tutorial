@@ -27,7 +27,9 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"myText","path":"objects/obj_npc/obj_npc.yy",},"objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"value":"Good crops this year","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "npcs",
     "path": "folders/Objects/npcs.yy",
