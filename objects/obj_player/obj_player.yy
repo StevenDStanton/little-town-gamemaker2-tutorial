@@ -1,5 +1,5 @@
 {
-  "name": "objPlayer",
+  "name": "obj_player",
   "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
