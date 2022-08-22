@@ -8,3 +8,4 @@ fadeSpeed = 0.1;
 image_alpha = 0;
 
 audio_play_sound(snd_pop01, 1, false);
+func_dismissPrompt(obj_prompt)

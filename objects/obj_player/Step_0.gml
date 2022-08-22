@@ -11,18 +11,7 @@ if(vx != 0 || vy != 0){
 	x = collision_point(x+vx, y, obj_par_enviroment, true, true) ? x : x+vx;
 	y = collision_point(x, y+vy, obj_par_enviroment, true, true) ? y : y+vy;
 	nearbyNPC = collision_rectangle(x - lookRange, y-lookRange, x+lookRange, y+lookRange, obj_npc, false, true)
-	if(nearbyNPC){
-		if(!hasGreeted){
-			audio_play_sound(snd_greeting01, 1, false);
-			hasGreeted = true;
-		}	
-	}else{
-		hasGreeted  = false;
-		hasInteraction = true;
-		if(instance_exists(obj_textbox)){
-			obj_textbox.fadeMe = 2;
-		}
-	}
+	
 	//Sets the direction based on the current velocity
 	dir = (vx > 0) ? 0 : ((vx < 0) ? 2 : dir);
 	dir = (vy > 0) ? 1 : ((vy < 0) ? 3 : dir);
@@ -31,6 +20,28 @@ if(vx != 0 || vy != 0){
 }else {
 	sprite_index = idleDirectionIndex[dir]
 }
+
+if(nearbyNPC){
+		if(npcPrompt == noone || npcPrompt == undefined){
+			npcPrompt = fnc_showPrompt(nearbyNPC, nearbyNPC.x, nearbyNPC.y-450)	
+		}
+		if(!hasGreeted){
+			audio_play_sound(snd_greeting01, 1, false);
+			hasGreeted = true;
+			
+		}	
+		
+		
+	}else{
+		hasGreeted  = false;
+		hasInteraction = true;
+		if(instance_exists(obj_textbox)){
+			obj_textbox.fadeMe = 2;
+		}
+		func_dismissPrompt(npcPrompt)
+	}
+	
+	
 if(interact){
 	if(!hasInteraction){
 		hasInteraction = true;
