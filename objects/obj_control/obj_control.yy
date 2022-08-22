@@ -1,13 +1,12 @@
 {
-  "name": "obj_control",
   "spriteId": null,
-  "spriteMaskId": null,
-  "visible": false,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": false,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": null,
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -21,6 +20,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -29,6 +29,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
+  "name": "obj_control",
   "tags": [],
   "resourceType": "GMObject",
 }

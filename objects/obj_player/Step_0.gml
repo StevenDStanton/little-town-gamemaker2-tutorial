@@ -13,13 +13,15 @@ if(vx != 0 || vy != 0){
 	nearbyNPC = collision_rectangle(x - lookRange, y-lookRange, x+lookRange, y+lookRange, obj_npc, false, true)
 	
 	//Sets the direction based on the current velocity
-	dir = (vx > 0) ? 0 : ((vx < 0) ? 2 : dir);
-	dir = (vy > 0) ? 1 : ((vy < 0) ? 3 : dir);
-	sprite_index = walkDirectionIndex[dir];
+	myDirection = (vx > 0) ? playerDirection.right : ((vx < 0) ? playerDirection.left : myDirection);
+	myDirection = (vy > 0) ? playerDirection.down : ((vy < 0) ? playerDirection.up : myDirection);
+	myState = playerState.walking;
 	audio_listener_set_position(0, x, y, 0);
 }else {
-	sprite_index = idleDirectionIndex[dir]
+	myState = playerState.idle;
 }
+
+sprite_index = playerSprite[myState][myDirection]
 
 if(nearbyNPC){
 		if(npcPrompt == noone || npcPrompt == undefined){
