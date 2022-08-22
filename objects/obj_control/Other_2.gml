@@ -17,3 +17,10 @@ enum playerDirection {
 	left,
 	up,
 }
+
+enum itemState {
+	idle,
+	taken,
+	used,
+	puttingBack,
+}

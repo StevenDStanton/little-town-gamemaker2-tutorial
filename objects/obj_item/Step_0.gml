@@ -1,3 +1,7 @@
 /// @description Sorting and Order
 
-depth = -y;
+switch myState {
+	case itemState.idle {
+		depth = -y;
+	};break;
+}
